@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>Calculadora Soma</h1>
+        <input type="number" id="numero1" placeholder="Digite o primeiro número">
+        <input type="number" id="numero2" placeholder="Digite o primeiro número">
+    
+        <button onclick="Soma()">Calcular Soma</button>
+
+        <h2 id="resultado1">Resultado: </h2>
+
+    </section>
+    <section class="container">
+        <h1>Converter Celsius para Fahrenheit</h1>
+
+        <input type="number" id="celsius" placeholder="Digite a temperatura" onchange="ConversaoTemperatura()">
+
+        <button onclick="ConversaoTemperatura()" ">Converter</button>
+
+        <h2 id="resultado2">Resultado</h2>
+    </section>
+
+    <section class="container">
+        <h1>A temperatura em Celsius</h1>
+
+        <input type="number" id="raio" placeholder="Digite o raio" onchange="Volume()">
+        <input type="number" id="altura" placeholder="Digite a sua altura" onchange="Volume()">
+
+        <button onclick="Volume()">Volume da Lata</button>
+
+        <h2 id="resultado3">Resultado</h2>
+    </section>
+
+    <section class="container">
+        <h1>Volume de uma Caixa Retangular</h1>
+
+        <input type="number" id="h2" placeholder="Digite a altura">
+        <input type="number" id="comprimento" placeholder="Digite o Comprimento">
+        <input type="number" id="largura" placeholder="Digite a Largura">
+
+        <button onclick="volumeRetangulo()">Volume Retangulo</button>
+
+        <h2 id="Resultado4">Resultado</h2>
+
+    </section>
+
+
+    <script src="javaScript/script.js"></script>
+</body>
+</html>
